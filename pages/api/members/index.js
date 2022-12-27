@@ -7,7 +7,7 @@ export default function handler(req, res) {
     else if(req.method === "POST"){
         const member = req.body.member;
         const newMember = {
-            id : Date.now,
+            id : Date().now,
             name : member,
             phone : "+8801750659659"
         }
